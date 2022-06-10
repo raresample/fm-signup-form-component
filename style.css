@@ -19,6 +19,7 @@ body {
   overflow: hidden;
   background-color: hsl(0, 100%, 74%) ;
   background-image: url('./images/bg-intro-mobile.png');
+  flex-direction: column;
 }
 
 .header {
@@ -58,7 +59,7 @@ input, textarea, select {
   font-weight: 700;
 }
 
-/* .input-container[data-error] input {
+.input-container[data-error] input {
   border-color: hsl(0, 100%, 74%);
   color: hsl(0, 100%, 74%);
 }
@@ -68,7 +69,7 @@ input, textarea, select {
   color: hsl(0, 100%, 74%);
   display: block;
   text-align: right;
-} */
+}
 
 input {
   box-sizing: border-box;
@@ -107,30 +108,20 @@ em {
     width: 1440px;
     padding: 120px 100px;
     box-sizing: border-box;
-    margin: auto;
-    overflow: hidden;
-    /* background-color: hsl(0, 100%, 74%) ; */
     background-image: url('./images/bg-intro-desktop.png');
     background-position: center;
     background-repeat: no-repeat;
-    /* position: relative; */
-    justify-content: center;
-    align-items: center;
-    resize: both;
-    overflow: auto;
+    display: flex;
+    justify-content: space-between;
   }
 
   .header {
-    float: left;
+    /* float: left;
     width: 50%;
     box-sizing: border-box;
-    margin: 0;
-    padding: 100px;
-    /* 
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    */
+    margin: 0; */
+    flex: 1;
+    padding: 60px;
     text-align: left;
   }
 
@@ -140,8 +131,9 @@ em {
   }
 
   .right {
-    float: right;
-    width: 50%;
+    /* float: left;
+    width: 50%; */
+    flex: 1;
     box-sizing: border-box;
     padding: 0 50px;
   }
