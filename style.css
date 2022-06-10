@@ -1,4 +1,5 @@
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -13,34 +14,25 @@ body {
 
 .container {
   width: 375px;
-  padding: 48px 20px;
-  box-sizing: border-box;
+  padding: 48px 24px;
   margin: auto;
   overflow: hidden;
   background-color: hsl(0, 100%, 74%) ;
   background-image: url('./images/bg-intro-mobile.png');
-  flex-direction: column;
 }
 
 .header {
   margin: 48px 0;
-  text-align: center;
-  padding: 0 10px;
-}
-
-.intro {
-  
 }
 
 h1 {
-  line-height: 2.25rem;
-  margin-bottom: 20px;
-  font-weight: 700;
+  margin: 24px;
 }
 
 .deal {
   /* margin: 66px 0 24px 0; */
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
+  margin: 20px 0;
   background-color: hsl(248, 32%, 49%);
   padding: 20px 60px;
   border-radius: 10px;
@@ -53,13 +45,14 @@ h1 {
   border-radius: 10px;
   box-shadow: 0px 5px 5px hsl(246, 25%, 77%);
 }
+
 input, textarea, select {
   font-family: inherit;
   font-size: 14px;
   font-weight: 700;
 }
 
-.input-container[data-error] input {
+/* .input-container[data-error] input {
   border-color: hsl(0, 100%, 74%);
   color: hsl(0, 100%, 74%);
 }
@@ -69,12 +62,11 @@ input, textarea, select {
   color: hsl(0, 100%, 74%);
   display: block;
   text-align: right;
-}
+} */
 
 input {
-  box-sizing: border-box;
   width: 100%;
-  margin-top: 15px;
+  margin: 10px 0;
   padding: 16px 20px;
   border: 1px solid hsl(246, 25%, 77%);
   border-radius: 3px;
@@ -82,7 +74,7 @@ input {
 
 button {
   width: 100%;
-  margin: 20px 0;
+  margin: 10px 0;
   padding: 20px;
   color: white;
   font-weight: 600;
@@ -95,12 +87,14 @@ button {
 .terms {
   font-size: 12px;
   color: hsl(246, 25%, 77%);
-  padding: 0 20px;
+  padding: 12px 20px;
 }
 
-em {
+.terms > strong {
   color: hsl(0, 100%, 74%);
 }
+
+
 
 
 @media(min-width:1440px) {
@@ -112,29 +106,24 @@ em {
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
+    align-items: center;
     justify-content: space-between;
   }
 
   .header {
-    /* float: left;
-    width: 50%;
-    box-sizing: border-box;
-    margin: 0; */
     flex: 1;
     padding: 60px;
     text-align: left;
   }
 
   h1 {
+    margin: 0 0 24px 0;
     font-size: 44px;
     line-height: 48px;
   }
 
   .right {
-    /* float: left;
-    width: 50%; */
     flex: 1;
-    box-sizing: border-box;
-    padding: 0 50px;
+    margin-right: 54px;
   }
 }
