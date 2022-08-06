@@ -125,9 +125,9 @@ button {
     width: 1440px;
     padding: 120px 100px;
     box-sizing: border-box;
-    background-image: url('./images/bg-intro-desktop.png');
+    /* background-image: url('./images/bg-intro-desktop.png');
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
     display: flex;
     align-items: center;
     justify-content: space-between;
